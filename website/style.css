@@ -1,0 +1,252 @@
+
+body{
+    background: -webkit-linear-gradient(to left top, #01aee2, #38e8ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left top, #01aee2, #38e8ff);
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#app{
+    display: grid;
+    grid-template-rows: 200px 200px 100px 350px;
+    /* grid-template-columns:  */
+    height:100%;
+    width: 60%;
+    color: #242424;
+    justify-content: center;
+    grid-gap: 1em;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    grid-gap: px;
+    background: linear-gradient(to left top, #e7e7e7, #e6e6e698);
+    left: 35;
+    /* right:50; */
+    /* position: relative; */
+    transform: translate(35%, 0);
+    border-radius: 40px;
+
+}
+
+#warning {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: rgb(223, 223, 223);
+    z-index: 5;
+    padding: 0 20px 20px 20px; 
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 250px;
+    width: 300px;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0 7px 0.5rem rgba(0, 0, 0, 0.575);
+    justify-self: center;
+}
+
+.black-page {
+    background-color: rgba(36, 36, 36, 0.61);
+    color: rgba(36, 36, 36, 0.61);
+    z-index: 2;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+#warning a, h1, p {
+    /* color: #f23557; */
+    text-decoration: none;
+    justify-self: center;
+}
+#warning h1 {
+    color: #3a3a3a;
+}
+#warning p {
+    color: #4d4d4d;
+}
+
+#warning h2 {
+    justify-self: right;
+    cursor: pointer;
+    position: absolute;
+    align-self: flex-start;
+    margin-right: 20px;
+}
+
+#warning a {
+    font-size: large;
+    font-weight: 600;
+    color: #5c20e6;
+    transition: all 0.3s;
+
+} 
+
+#warning a:hover{
+    font-size: larger;
+    color: #4169e1;
+}
+
+
+.holder{
+
+}
+
+.headline {
+    font-size: 60px;
+    padding: 30px;
+    justify-self: center;
+    font-weight: bolder;
+}
+
+
+
+.entry{
+    background: rgba(59, 74, 107, .4);
+}
+
+#entryHolder{
+    padding: 20px;
+    font-weight: bolder;
+}
+
+#date{
+
+}
+
+#temp{
+
+}
+
+#content{
+
+}
+
+.headline {
+    /* border: 15px dashed #242424; */
+    border-radius: 10px;
+    text-decoration: underline;
+}
+.title{
+    font-size: larger;
+    font-weight: bolder;
+    color: #1b1b1b98;
+    padding: 5px 0 15px 20px;
+}
+
+#recent-entry {
+    border-radius: 15px;
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label{
+    display:block;
+    font-size: 27px;
+}
+
+input{
+    display:block;
+    height: 60px;
+    width: 320px;
+    background:#22b2da;
+    color: #3d3d3d;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+}
+
+.myInput {
+    height: 150px;
+}
+
+button{
+    width: 200px;
+    height: 100px;
+    background: #3d3d3d;
+    color: #dbdbdb;
+    font-size: 26px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    box-shadow: 2px 4px 5px #444;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover{
+    color: #01aee2;
+    width: 210px;
+    height: 110px;
+}
+
+#holder-input {
+    /* width: 500px; */
+    height:200;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+.feeling-box{
+    width: 335px;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+#feelings {
+    border-radius: 15px;
+    padding: 5px 0 0 15px;
+    border-style: unset;
+    color: #3a3a3a;
+    
+}
+
+#zip{
+    border-radius: 15px;
+    padding: 0 0 0 15px;
+}
+
+#zip-box{
+    height: 80px;
+}
+
+h1{
+    font-size: 36px;
+}
+
+textarea{
+    background:#22b2da;
+    color: #333333;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: #005c91e5; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: #005c91e5; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+  
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: #005c91e5; 
+    font-family: 'Oswald', sans-serif;
+
+} 
