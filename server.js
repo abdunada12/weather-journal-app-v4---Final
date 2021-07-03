@@ -1,7 +1,7 @@
 
 // Setup empty JS object to act as endpoint for all routes
 const port = 5500;
-projectData = [];
+projectData = {};
 
 // Require Express to run server and routes
 const express = require('express');
@@ -32,7 +32,7 @@ app.get('/sendData', (_req, res)=> {
 
 app.post('/takeData', (req, res)=>{
     res.send()
-    projectData.push(req.body)
+    projectData= (req.body)
     console.log(projectData)
     console.log('data has been recieved')
     
