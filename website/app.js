@@ -43,10 +43,10 @@ async function performAction(e){
     }
        )
     .then(async (data)=> {
-        document.getElementById('date').innerHTML = '📆 Date is: '+ data[0].Date;
-        document.getElementById('temp').innerHTML = '🌡 Temperature is: '+data[0].Temperature;
-        document.getElementById('content').innerHTML = '🥴 Your feeling is: '+data[0].Feeling;
-        document.getElementById('city').innerHTML = '🌎 City is: '+data[0].CityName;
+        document.getElementById('date').innerHTML = '📆 Date is: '+ data.Date;
+        document.getElementById('temp').innerHTML = '🌡 Temperature is: '+data.Temperature;
+        document.getElementById('content').innerHTML = '🥴 Your feeling is: '+data.Feeling;
+        document.getElementById('city').innerHTML = '🌎 City is: '+data.CityName;
 })
     .catch(err=>err);
 }
