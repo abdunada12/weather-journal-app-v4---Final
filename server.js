@@ -32,7 +32,7 @@ app.get('/sendData', (_req, res)=> {
 
 app.post('/takeData', (req, res)=>{
     res.send()
-    projectData= (req.body)
+    projectData = (req.body);
     console.log(projectData)
     console.log('data has been recieved')
     
